@@ -3,5 +3,10 @@
     width: 50px;
     border: 1px solid red;
     background: black;
+    transition: all 0.5s;
+}
+
+.b {
+    border-color: blue;
 }
 

@@ -7,6 +7,7 @@ function checkKeyPressed(e){
         case 68:
             console.log("The 'd' key is pressed.");
             document.getElementById('boom').play();
+            d[0].classList.add("b");
             break;
         case 65:
             console.log("The 'a' key is pressed.");
