@@ -1,9 +1,9 @@
 .keySq{
-    height: 50px;
-    width: 50px;
-    border: 1px solid red;
+    height: 100px;
+    width: 100px;
+    border: 10px solid red;
     background: black;
-    transition: all 0.5s;
+    transition: all 0.05s;
 }
 
 .b {

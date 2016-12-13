@@ -1,53 +1,54 @@
-var d = document.getElementsByClassName("d");
+const keys = document.querySelectorAll(".keySq");
+var key = document.querySelectorAll(".keySq");
 
 window.addEventListener("keydown", checkKeyPressed, false);
+keys.forEach(key => key.addEventListener("transitionend", removeTransition, false));
+
 
 function checkKeyPressed(e){
     switch (e.keyCode){
-        case 68:
-            console.log("The 'd' key is pressed.");
-            document.getElementById('boom').play();
-            d[0].classList.add("b");
-            break;
         case 65:
-            console.log("The 'a' key is pressed.");
             document.getElementById('clap').play();
+            key[0].classList.add("b");
             break;
         case 83:
-            console.log("The 's' key is pressed.");
             document.getElementById('hihat').play();
+            key[1].classList.add("b");
+            break;
+        case 68:
+            document.getElementById('boom').play();
+            key[2].classList.add("b");
             break;
         case 70:
-            console.log("The 'f' key is pressed.");
             document.getElementById('kick').play();
+            key[3].classList.add("b");
             break;
         case 71:
-            console.log("The 'g' key is pressed.");
             document.getElementById('openhat').play();
+            key[4].classList.add("b");
             break;
         case 72:
-            console.log("The 'h' key is pressed.");
             document.getElementById('ride').play();
+            key[5].classList.add("b");
             break;
         case 74:
-            console.log("The 'j' key is pressed.");
             document.getElementById('snare').play();
+            key[6].classList.add("b");
             break;
         case 75:
-            console.log("The 'k' key is pressed.");
             document.getElementById('tink').play();
+            key[7].classList.add("b");
             break;
         case 76:
-            console.log("The 'l' key is pressed.");
             document.getElementById('tom').play();
+            key[8].classList.add("b");
             break;
     }
-    // if (e.keyCode == "68") {
-    //     console.log("The 'd' key is pressed.");
-    //     document.getElementById('audio').play();
-    // }
 }
 
+function removeTransition(e){
+    this.classList.remove('b');
+    }
 
 //maybe try and refactor the switch into a for loop
 //where you get all the elements in one class array and loop through
