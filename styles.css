@@ -1,12 +1,38 @@
+html { 
+  background: url(drum.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Pathway Gothic One', sans-serif;
+}
+
 .keySq{
-    height: 100px;
-    width: 100px;
-    border: 10px solid red;
+    height: 50px;
+    width: 50px;
+    border: 2px solid red;
     background: black;
-    transition: all 0.05s;
+    transition: all 0.09s;
+    
+    text-align: center;
 }
 
 .b {
+    transform: scale(1.1);
     border-color: blue;
+}
+
+.keyName {
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    line-height: 25px;
+}
+.soundName {
+    font-size: 16px;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    line-height: 25px;
 }
 
