@@ -1,12 +1,7 @@
-.green{
+.keySq{
     height: 50px;
     width: 50px;
-    background: green;
-}
-
-.d{
-    height: 50px;
-    width: 50px;
+    border: 1px solid red;
     background: black;
 }
 
